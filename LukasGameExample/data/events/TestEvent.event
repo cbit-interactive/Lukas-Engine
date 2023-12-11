@@ -1,0 +1,66 @@
+event {
+    name = TEST.1.NAME
+    namespace = TEST
+    picture = test_pic.1
+    desc = TEST.1.DESC
+
+    option {
+        title = "OK"
+        effects {
+            factionalism = 14
+            TNA {
+                dissolved = true
+            }
+        }
+    }
+}
+
+events {
+    namespace = TNA
+    event {
+        tag = 2
+        name = NAME
+        desc = DESC2
+        picture = test_pic.343
+        option {
+            title = "KILL THE LIZARDS"
+            effects {
+                if ( tag.doesExist("TSA") == true){
+                    new_country {
+                        capital = NULL
+                        at_war = true
+                        colour = rgb(250,0,0)
+                        graphical_model = southern_model
+                        government_system = fascist_regime
+                    }
+                }
+                else {
+                    name_change = "Most Illustrious Empire of Test Nation, Imrtgrad, and Falisdalea-Goobgooblandistan"
+                }
+            }
+        }
+    }
+    event {
+        tag = 3
+        name = NAME
+        desc = DESC3
+        picture = test_pic.342
+        option {
+            title = "KILL THE LIZARDS"
+            effects {
+                if ( tag.doesExist("TSA") == true){
+                    new_country {
+                        capital = NULL
+                        at_war = true
+                        colour = rgb(250,0,0)
+                        graphical_model = southern_model
+                        government_system = fascist_regime
+                    }
+                }
+                else {
+                    name_change = "Most Illustrious Empire of Test Nation, Imrtgrad, and Falisdalea-Goobgooblandistan"
+                }
+            }
+        }
+    }
+}

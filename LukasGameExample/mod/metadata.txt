@@ -1,0 +1,5 @@
+#################
+## CBIT MODS
+
+[steamModId] = "[modName].zip"
+[steamModId2] = "stupidmod.zip"

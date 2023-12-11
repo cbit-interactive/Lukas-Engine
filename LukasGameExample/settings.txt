@@ -1,0 +1,18 @@
+#######################################
+## CBIT SYSTEM SETTINGS
+#######################################
+
+height=1600
+width=760
+discordConnection=false
+logFile=log.txt
+music=60
+sfx=30
+skipInto=true
+fpsLimit=120
+graphics=fancy
+language=en
+subtitles=false
+addonCommands="-nudge -debug" # .\[GameName].exe -nudge -debug
+chelyMonster=false # set to true for the Chely Beast
+greg=false # set to true for greg to attack from Worldbox

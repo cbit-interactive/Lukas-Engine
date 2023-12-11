@@ -1,0 +1,18 @@
+lang.name=English
+lang.id=en
+
+title.main=EXAMPLE GAME
+title.single=Single player
+title.multi=Multiplayer
+title.quit=Quit Game
+title.wiki=Game Wiki
+title.settings=Settings
+title.lang=Language
+
+multi.msg=Multiplayer connects you to the world!
+multi.host=Host Game
+multi.join=Join a Game
+
+single.msg=Play a single player save
+single.start=Start a save
+single.load=Load a save

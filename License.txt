@@ -1,0 +1,21 @@
+######################################################
+## CBIT GENERAL GAME SOFTWARE LICENSE	            ##
+######################################################
+title_small: CGGSL
+title_long: CBit General Game Software License
+version: 1.1
+author: Elias Oberholtz <general.cbit@gmail.com>
+
+Copyright (c) 2023 by CBit Interactive.
+
+# Public Use
+Parts of this source code may be used modified or distributed as long as
+said source comes with this license and distribution is not for commercial
+purposes. CBit shall provide no warranty or support for this software other
+than what comes from the documentation.
+
+# Private Use
+All source code may be modified or tested upon to provide improvements
+to the code or to test the capabilites of the code. ABSOLUTELY NO
+DISTRIBUTION SHALL BE ALLOWED BY CBIT, COMMERICIAL OR
+OTHERWISE. CBit shall provide no warranty or support on these ventures.

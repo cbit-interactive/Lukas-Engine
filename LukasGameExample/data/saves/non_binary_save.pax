@@ -1,0 +1,50 @@
+multiplayer=true
+gamever=0.1a
+savever=1.0
+time=1444.4.4
+
+# game settings
+@players
+123=camera.pos(400,700) && nation.tag("SPE") # 123 is a player id
+321=camera.pos(700,400) && nation.tag("TNA")
+# data
+
+@provinces
+1:
+	country_controller=TNA && country_owner=TNA
+	armies=TNA && FOR
+	buildings=fort.level(2) && naval_base.level(1) && treasury.level(10)
+	infastructure=7
+
+2:
+	country_controller=TNA && country_owner=TNA
+	armies=TNA
+	buildings=fort.level(2) && naval_base.level(1) && treasury.level(10)
+	infastructure=7
+3:
+	country_controller=TNA && country_owner=TNA
+	armies=TNA
+	buildings=fort.level(2) && naval_base.level(1) && treasury.level(10)
+	infastructure=7
+4:
+	country_controller=TNA && country_owner=TNA
+	armies=TNA
+	buildings=fort.level(2) && naval_base.level(1) && treasury.level(10)
+	infastructure=7
+5:
+	country_controller=FOR && country_owner=FOR
+	armies=FOR
+	buildings=fort.level(2) && naval_base.level(1) && treasury.level(10)
+	infastructure=7
+
+@mods
+[modid]=true
+483984930=false
+498348754=false
+431921984=false
+496201847=true
+
+
+@countries
+TNA = 1 2 3 4
+FOR = 5

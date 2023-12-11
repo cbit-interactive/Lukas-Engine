@@ -1,0 +1,19 @@
+colour = rgb(10,250,20)
+gfx_model = forestrian_model
+
+capital = NULL
+nationalism = 2
+warsupport = 70
+stability = 34.1
+tag = TNA
+
+government {
+    democracy = 100
+    current_system = democratic_monarchy
+}
+laws {
+
+}
+ideas {
+
+}

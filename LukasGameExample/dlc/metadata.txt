@@ -1,0 +1,2 @@
+ForestriaDlc = "forestria.zip"
+FriendsAndEnemies = "friends.zip"

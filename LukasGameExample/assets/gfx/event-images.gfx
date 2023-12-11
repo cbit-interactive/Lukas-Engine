@@ -1,0 +1,10 @@
+gfx {
+	type=event
+	path="assets/events/fake.png"
+	name=GFX_non_existant_image
+}
+gfx {
+	type=path_tree
+	path="assets/events/fake.png"
+	name=GFX_non_existant_image2_pathTree
+}
