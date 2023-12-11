@@ -1,5 +1,5 @@
 #########################################
-## CBit Interactive - Lukas Engine		        ##
+## CBit Interactive - Lukas Engine     ##
 #########################################
 
 The Lukas Engine (or Lucas Engine) is a game engine, of sorts.
