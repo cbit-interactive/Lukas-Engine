@@ -1,12 +1,22 @@
 #include "utils/LoggingUtil.hpp"
 #include "settings.hpp"
 #include "include/SDL2/SDL.h"
+//#include "localisation.hpp"
 
 #include <stdio.h>
+#include <sstream>
+#include <string>
 
 int main(int argc, char* argv[]){
     Log::clearLog();
     SettingsReader sR("settings.txt");
+
+    int langIDstr = sR.getSetting("language"); // Get settings
+
+    //stringstream langID; // lang id getting converting to string!
+    //langID << langIDstr;
+    
+    //Locale::setLanguage(langID.str()); // Set the default language (en)
 
     int WIDTH = sR.getSetting("width");
     int HEIGHT = sR.getSetting("height");
@@ -19,16 +29,16 @@ int main(int argc, char* argv[]){
     //Initialize SDL
     if( SDL_Init( SDL_INIT_VIDEO ) < 0 )
     {
-        Log::l(ErrorP, "SDL could not be initalised!");
+        Log::l(ErrorP, "COULD NOT INITIALISE SDL");
         printf( "SDL could not initialize! SDL_Error: %s\n", SDL_GetError() );
     }
     else {
 
-        Log::l(TraceP, "SDL has been initialised");
-        window = SDL_CreateWindow("Lukas Engine Test", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, WIDTH, HEIGHT, SDL_WINDOW_SHOWN);
+        Log::l(TraceP, "SDL HAS BEEN INITIALISED");
+        window = SDL_CreateWindow("Lukas Engine", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, WIDTH, HEIGHT, SDL_WINDOW_SHOWN);
         if( window == NULL )
         {
-            Log::l(ErrorP, "Window could not be created, please check console for more data!");
+            Log::l(ErrorP, "Window could not be created");
             printf( "Window could not be created! SDL_Error: %s\n", SDL_GetError() );
         }
         else
@@ -50,6 +60,6 @@ int main(int argc, char* argv[]){
 
     SDL_DestroyWindow(window);
     SDL_Quit();
-    Log::l(TraceP, "SDL has shut down!");
+    Log::l(TraceP, "SDL SHUTDOWN");
     return 0;
 }
